@@ -1,16 +1,16 @@
-BASE_PATH = "/data/wenxinma"
+BASE_PATH = "data"
 DATA_PATH = {
-    "Brain": f"{BASE_PATH}/data/MedAD/Brain_AD",
-    "Liver": f"{BASE_PATH}/data/MedAD/Liver_AD",
-    "Retina": f"{BASE_PATH}/data/MedAD/Retina_RESC_AD",
-    "Colon_clinicDB": f"{BASE_PATH}/data/Colon/CVC-ClinicDB",
-    "Colon_colonDB": f"{BASE_PATH}/data/Colon/CVC-ColonDB",
-    "Colon_cvc300": f"{BASE_PATH}/data/Colon/CVC-300",
-    "Colon_Kvasir": f"{BASE_PATH}/data/Colon/Kvasir",
-    "BTAD": f"{BASE_PATH}/data/BTech_Dataset_transformed",
-    "MPDD": f"{BASE_PATH}/data/MPDD",
-    "MVTec": f"{BASE_PATH}/data/mvtec_ad",
-    "VisA": f"{BASE_PATH}/data/VisA_20220922",
+    "Brain": f"{BASE_PATH}/Brain_AD",
+    "Liver": f"{BASE_PATH}/Liver_AD",
+    "Retina": f"{BASE_PATH}/Retina_RESC_AD",
+    "Colon_clinicDB": f"{BASE_PATH}/CVC-ClinicDB",
+    "Colon_colonDB": f"{BASE_PATH}/CVC-ColonDB",
+    "Colon_cvc300": f"{BASE_PATH}/CVC-300",
+    "Colon_Kvasir": f"{BASE_PATH}/Kvasir",
+    "BTAD": f"{BASE_PATH}/BTech_Dataset_transformed",
+    "MPDD": f"{BASE_PATH}/MPDD",
+    "MVTec": f"{BASE_PATH}/MVTEC_AD",
+    "VisA": f"{BASE_PATH}/Visa_AD",
 }
 
 CLASS_NAMES = {

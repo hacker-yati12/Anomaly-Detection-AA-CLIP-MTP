@@ -1,6 +1,8 @@
 *.pth
 *.pt
-ckpt/
+checkpoints/
+data/
+results/
 final/
 finalOct25/
 finalOct27/
