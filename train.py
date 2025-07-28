@@ -61,11 +61,11 @@ def train_text_adapter(
 
             # forward text
             epoch_text_feature_dict = {}
-            for class_name in list(set(class_names)):
+            for class_name in list(set(class_names)):                           # we can optimize this by caching in a dictionary -> as we only need to calculate once for each class
                 text_embedding = get_adapted_single_class_text_embedding(
                     adapted_model, dataset_name, class_name, device
                 )
-                epoch_text_feature_dict[class_name] = text_embedding
+                epoch_text_feature_dict[class_name] = text_embedding            # but this is already done! (so should not be done in training of the text adapter)
             epoch_text_feature = torch.stack(
                 [epoch_text_feature_dict[class_name] for class_name in class_names],
                 dim=0,
@@ -93,7 +93,7 @@ def train_text_adapter(
                     .sum(1)
                     .mean()
                 ) ** 2
-                loss += orthogonal_loss * text_norm_weight
+                # loss += orthogonal_loss * text_norm_weight                # without orthogonal loss function
             # backward
             optimizer.zero_grad()
             loss.backward()
